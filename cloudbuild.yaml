@@ -16,9 +16,9 @@
 # repository as source. Here we use the 'docker' image to build the image and
 # tag it with the name of the image.
 steps:
-  - name: maven:3-jdk-8
-    entrypoint: mvn
-    args: ["package", "-Dmaven.test.skip=true"]
+  #- name: maven:3-jdk-8
+  #  entrypoint: mvn
+  #  args: ["package", "-Dmaven.test.skip=true"]
     
   - name: python
     entrypoint: pip
