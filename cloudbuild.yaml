@@ -20,9 +20,9 @@ steps:
   #  entrypoint: mvn
   #  args: ["package", "-Dmaven.test.skip=true"]
     
-  - name: python
-    entrypoint: pip
-    args: ["install", "-r", "requirements.txt", "--user"]
+  #- name: python
+  #  entrypoint: pip
+  #  args: ["install", "-r", "requirements.txt", "--user"]
           
   - name: 'gcr.io/cloud-builders/mvn'
     entrypoint: "bash"
