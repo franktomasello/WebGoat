@@ -17,6 +17,11 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
+      - run:
+          name: Run BD
+          command: bash <(curl -s https://detect.synopsys.com/detect7.sh) --blackduck.url=https://poc138.blackduck.synopsys.com/ --blackduck.username=PDFTron --blackduck.password=Blackduck!
+
+          
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
