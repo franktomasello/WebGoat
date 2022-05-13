@@ -12,6 +12,9 @@ jobs:
       - image: cimg/base:stable
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+    build:
+      docker:
+        - image: circleci/openjdk:11-jdk
     steps:
       - checkout
       - run:
@@ -19,7 +22,7 @@ jobs:
           command: "echo Hello, World!"
       - run:
           name: Run BD
-          command: bash <(curl -s https://detect.synopsys.com/detect7.sh) --blackduck.url=https://poc138.blackduck.synopsys.com/ --blackduck.username=PDFTron --blackduck.password=Blackduck!
+          command: bash <(curl -s https://detect.synopsys.com/detect7.sh) --blackduck.url=https://testing.blackduck.synopsys.com --blackduck.username=sysadmin --blackduck.password=e5@w3^C1?m2P?W
 
           
 
