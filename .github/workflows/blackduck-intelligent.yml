@@ -32,4 +32,4 @@ jobs:
           # Optional parameter, but usually specified - the location of the Synopsys Bridge software
           # The Synopsys Bridge software distribution is platform specific - this must match the host OS
           # of your runner. For example in this case, we are using the latest version for Linux.
-          bridge_download_url: ${{ env.https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-action/0.1.72/ci-package-0.1.72-win64.zip }}
+          bridge_download_url: ${{ sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-action/0.1.72/ci-package-0.1.72-win64.zip }}
