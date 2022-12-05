@@ -28,7 +28,7 @@ jobs:
           #blackduck_scan_full: false
           # Optional parameter. The values could be. ALL|NONE|BLOCKER|CRITICAL|MAJOR|MINOR|OK|TRIVIAL|UNSPECIFIED
           # Single parameter
-          blackduck_scan_failure_severities: "[\"ALL\"]"
+          blackduck_scan_failure_severities: '["ALL"]'
           # multiple parameters
           # blackduck_scan_failure_severities: "[\"BLOCKER\", \"CRITICAL\", \"TRIVIAL\"]"
 
