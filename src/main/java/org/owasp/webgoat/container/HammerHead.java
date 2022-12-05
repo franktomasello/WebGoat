@@ -48,7 +48,7 @@ public class HammerHead {
     private final Course course;
 
     /**
-     * Entry point for WebGoat, redirects to the first lesson found within the course.
+     * An entry point for WebGoat, redirects to the first lesson found within the course.
      */
     @RequestMapping(path = "/attack", method = {RequestMethod.GET, RequestMethod.POST})
     public ModelAndView attack() {
