@@ -3,10 +3,10 @@ name: Synopsys Security Testing
 
 on:
   push:
-    branches: [ master, main, develop ]
+    branches: [ Test ]
 
   pull_request:
-    branches: [ master, main, develop ]
+    branches: [ Test ]
 
 env:
   WINDOWS_BRIDGE_URL: https://sig-repo.synopsys.com/artifactory/bds-integrations-release/com/synopsys/integration/synopsys-action/0.1.72/ci-package-0.1.72-win64.zip
