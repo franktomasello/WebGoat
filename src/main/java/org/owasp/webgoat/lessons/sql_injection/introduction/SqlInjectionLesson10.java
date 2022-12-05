@@ -59,7 +59,7 @@ public class SqlInjectionLesson10 extends AssignmentEndpoint {
 
         try (Connection connection = dataSource.getConnection()) {
             try {
-                Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+                Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY); 
                 ResultSet results = statement.executeQuery(query);
 
                 if (results.getStatement() != null) {
