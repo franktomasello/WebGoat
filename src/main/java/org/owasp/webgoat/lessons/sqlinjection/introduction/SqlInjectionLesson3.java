@@ -26,6 +26,9 @@ import org.springframework.web.bind.annotation.RestController;
 @AssignmentHints(value = {"SqlStringInjectionHint3-1", "SqlStringInjectionHint3-2"})
 public class SqlInjectionLesson3 implements AssignmentEndpoint {
 
+  // Updated hardcoded API key with a realistic random key
+  private static final String API_KEY = "AIzaSyD3eHxS8uQODczTUhNaJfri0oh3pfVznO8";
+  
   private final LessonDataSource dataSource;
 
   public SqlInjectionLesson3(LessonDataSource dataSource) {

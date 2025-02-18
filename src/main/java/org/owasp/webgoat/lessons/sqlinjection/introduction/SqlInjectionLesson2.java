@@ -33,6 +33,9 @@ import org.springframework.web.bind.annotation.RestController;
     })
 public class SqlInjectionLesson2 implements AssignmentEndpoint {
 
+  // Added hardcoded secret
+  private static final String PASSWORD = "blueDog55";
+  
   private final LessonDataSource dataSource;
 
   public SqlInjectionLesson2(LessonDataSource dataSource) {
