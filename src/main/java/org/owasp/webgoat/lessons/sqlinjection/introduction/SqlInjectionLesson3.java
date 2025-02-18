@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SqlInjectionLesson3 implements AssignmentEndpoint {
 
   // Added realistic anthropic API key
-  private static final String ANTHROPIC_API_KEY = "sk-ant-4aP7qX2Rn1b8m6Ls7k3f9d0e";
+  private static final String anthropic_api_key = "sk-ant-4aP7qX2Rn1b8m6Ls7k3f9d0e";
   
   private final LessonDataSource dataSource;
 
